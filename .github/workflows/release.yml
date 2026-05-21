@@ -20,7 +20,16 @@ jobs:
         with:
           client-id: ${{ secrets.SEMANTIC_RELEASE_APP_CLIENT_ID }}
           private-key: ${{ secrets.SEMANTIC_RELEASE_APP_PRIVATE_KEY }}
+          # Scope the token to exactly the two repos this workflow touches:
+          # this repo (for release-please) and claude-skills (for the dispatch).
           owner: ${{ github.repository_owner }}
+          repositories: |
+            claude-plugin-contributory-factors
+            claude-skills
+          # Explicitly request only the permissions needed; drop everything else
+          # from the blanket installation grant.
+          permission-contents: write
+          permission-pull-requests: write
 
       - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7  # v5.0.0
         id: rp
