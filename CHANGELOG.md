@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/yo61/claude-plugin-contributory-factors/compare/v1.0.2...v1.0.3) (2026-08-27)
+
+
+### Dependencies
+
+* bump @commitlint/config-conventional in the hooks group ([#29](https://github.com/yo61/claude-plugin-contributory-factors/issues/29)) ([db9e79e](https://github.com/yo61/claude-plugin-contributory-factors/commit/db9e79e5bd79730a017ee3fdba627bc91d655244))
+* bump https://github.com/woodruffw/zizmor-pre-commit ([#23](https://github.com/yo61/claude-plugin-contributory-factors/issues/23)) ([fb87c93](https://github.com/yo61/claude-plugin-contributory-factors/commit/fb87c9352b7d2338462735e71d606b437e31ed97))
+
 ## [1.0.2](https://github.com/yo61/claude-plugin-contributory-factors/compare/v1.0.1...v1.0.2) (2026-05-21)
 
 
